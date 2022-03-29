@@ -1,11 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(206, 201, 201);
+}
+.central { 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
+    position: relative;
+    padding-top:  30px;
     border-radius: 3%;
     box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 350px;
-    margin: auto;
+    margin: 0 auto;  
     text-align: center;
     font-family: 'Times New Roman';
-    background-color: rgb(6, 97, 26);
+    background-color: rgb(57, 78, 61);
+}
+#formageometrica {
+    border-radius: 3%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 235px;
+    background: rgb(78, 224, 110);
+    clip-path: polygon(0 0, 100% 0, 100% 41%, 50% 70%, 0 41%);
+    display: flex;
 }
 
 .card h1 {
@@ -15,24 +43,45 @@
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 0 15px;
-    
 }
 .card img {
     box-shadow: inset 0 0 0 2px rgb(0, 0, 0);
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-    padding: 1px;
-    
-    
-    
-}
-.card p {
+    clip-path: circle();}
+    .card p {
     
         color: black;
-        margin: 0;
+        margin-bottom: 0 30px;
         font-size: 1em;
         line-height: 1.5em;
         padding: 10px;
+}
+.card ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card ul li a span{
+    color: rgb(0, 0, 0);
+    font-size: 40px
+}
+.card ul li a span:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.card ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
 }
