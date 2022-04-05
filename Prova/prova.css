@@ -6,8 +6,7 @@
 
 .centro {
 	display: flex;
-
-}
+	justify-content: center;}
 
 .direita{
 	position: absolute;
@@ -61,4 +60,5 @@
 	background: url("images.jpeg");
 	background-repeat: no-repeat;	
 	background-size: 100vh 100vh;
+	object-fit: cover;
 }
