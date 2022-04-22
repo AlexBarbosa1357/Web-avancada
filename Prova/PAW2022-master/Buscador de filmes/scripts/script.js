@@ -1,7 +1,7 @@
 
 
 const findFilm = async () => {
-    document.getElementById("filmTitle").innerHTML = `<div class="c-loader"></div>`;
+    // document.getElementById("filmTitle").innerHTML = `<div class="c-loader"></div>`;
     const film = document.getElementById("boxText").value;
    
     if (film.length > 0) {

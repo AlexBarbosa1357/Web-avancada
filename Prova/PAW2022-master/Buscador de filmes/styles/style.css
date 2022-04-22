@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(34, 126, 42);
+    background-color: rgb(207, 9, 9);
     box-shadow: inset 0px 0px 120px #1b1b1b;
 }
 
@@ -27,6 +27,7 @@
 }
 
 .infoAndFind {
+    
     width: 35%;
     height: 80vh;
     display: flex;
@@ -49,25 +50,26 @@
 }
 
 #button {
+    margin-top: 20px;
     width: 7.8vw;
     height: 40px;
     left: 1176px;
     top: 88px;
-    background: #217C8F;
+    background: #4cc3db;
     border-radius: 10px;
     border: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: #CAB9B9;
+    color: #000000;
 }
 
 #button:hover {
-    background: #1B5E20;
+    background: #022188;
     cursor: pointer;
 }
 
 #button:active {
-    background: #1B5E20;
+    background: #022188;
     transform: translateY(3px);
 }
 
@@ -135,6 +137,7 @@
 }
 
 .filmNoteOnImdb P {
+    margin-top: 12px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 20px;
@@ -164,10 +167,4 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-@keyframes is-rotating {
-    to {
-        transform: rotate(1turn);
-        }
 }
